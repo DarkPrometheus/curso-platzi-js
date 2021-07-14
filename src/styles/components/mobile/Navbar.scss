@@ -1,0 +1,35 @@
+@media (min-width: 320px){
+    nav{
+        @include center;
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        div{
+            @include center;            
+            width: 100%;
+            img{
+                transition: all .5s ease;
+            }
+            .invertido{
+                transform: rotate(180deg);
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: column;
+            padding: .5rem;
+            li{
+                @include center;
+                padding: .5rem;
+                list-style: none;
+                font-size: 1.2rem;
+                a{
+                    color: #FFE268;
+                }
+            }
+        }
+        .hide{
+            display: none;
+        }
+    }
+}

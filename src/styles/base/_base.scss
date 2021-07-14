@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    font-family: 'Uchen', serif;
+}
+#root, .Routers{
+    height: 100%;
+    background: rgb(25,27,29);
+    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, rgba(255,226,104,1) 52%);
+    display: flex;
+    flex-flow: column;
+    
+}
+.Routers{
+display: flex;
+flex-direction: column;
+}
+
+select {
+    // A reset of styles, including removing the default dropdown arrow
+    appearance: none;
+    // Additional resets for further consistency
+    background-color: transparent;
+    border: none;
+}
+select::-ms-expand {
+    display: none;
+}
+
+.MenuBoton{
+    margin: 1rem 1rem 1rem 0;
+    width: 3rem;
+    height: 3rem;
+}
+.Hide{
+    display: none;
+}
+
+.Btn{
+    background-color: $primary;
+    width: 8rem;
+    font-size: 1.5rem;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 1rem;
+    color: white;
+    :hover{
+        color: black;
+    }
+}
+
+a{
+    text-decoration: none;
+}
+
+@mixin Styles {
+    .title{
+        font-size: 5rem;
+        color: white;
+        font-family: 'Potta One', cursive;
+    }
+
+    .link{
+        text-decoration: none;
+        color: $color;
+    }
+
+    .Display{
+        display: block;
+    }
+
+    .NoDisplay{
+        display: none;
+    }
+
+    .mr-1{
+        margin-right: 1rem;
+    }
+
+    .shadow{
+        &:hover{
+            color: darken($color: white, $amount: .1);
+            text-shadow: 1px 1px;
+        }
+    }
+}
+
+.Color1{
+    background: rgb(25,27,29);
+    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #87D1AB 52%);
+}
+.Color2{
+    background: rgb(25,27,29);
+    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #FFADAD 52%);
+}
+.Color3{
+    background: rgb(25,27,29);
+    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #A4CEFC 52%);
+}
+.Color4{
+    background: rgb(25,27,29);
+    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #E4C1F9 52%);
+}

@@ -1,0 +1,42 @@
+@media (min-width: 480px){
+    .Descuentos__container{
+        h1{
+            font-size: $t1h1;
+        }
+        .Descuentos__card{
+            width: 20rem;
+            .icon{
+                font-size: 6.5rem;
+            }
+            .Descuentos__input{
+                p{
+                    font-size: $t1p;
+                }
+                .MuiFormControl-root{
+                }
+            }
+            .Resultado{
+                font-size: $t1p;
+            }
+        }
+    }
+}
+@media (min-width: 600px){
+    .Descuentos__container{
+        .Descuentos__card{
+            .icon{
+                font-size: 6.5rem;
+            }
+            .Descuentos__input{
+                p{
+                    font-size: $t2p;
+                }
+                .MuiFormControl-root{
+                }
+            }
+            .Resultado{
+                font-size: $t2p;
+            }
+        }
+    }
+}

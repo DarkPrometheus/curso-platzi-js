@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Uchen&display=swap');
+
+@media (min-width: 1024px){
+    .Home__container{
+        h1{
+            font-size: $d1h1;
+        }
+        p{
+            font-size: $d1p;
+        }
+        .Home__menuContainer{
+            margin-top: 2rem;
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            .Home__menu{
+                .Figuras{
+                    border-width: 0 145px 270px 145px;
+                }
+                .btn{
+                    
+                }
+                a{
+                    font-size: $d1p;
+                }
+                .Descuentos{
+                    font-size: 20rem;
+                    color: black;
+                    margin-top: -2rem;
+                    margin-bottom: -2.9rem;
+                }
+            }    
+        }
+    }
+}
+@media (min-width: 1800px){
+    .Home__container{
+        h1{
+            font-size: $t1h1;
+        }
+        p{
+            font-size: $d2p;
+        }
+        .Home__menuContainer{
+            .Home__menu{
+                .Figuras{
+                    border-width: 0 145px 270px 145px;
+                }
+                .btn{
+                    
+                }
+                a{
+                    font-size: $d2p;
+                }
+            }
+    
+        }
+    }
+}

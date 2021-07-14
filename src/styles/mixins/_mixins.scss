@@ -1,0 +1,71 @@
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@mixin rowCenter {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+@mixin column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin fullv {
+    width: 100vw;
+    height: 100vh;
+}
+
+@mixin full {
+    width: 100%;
+    height: 100%;
+}
+
+@mixin botones {
+    @include center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 100%;
+    height: 5rem;
+    a{
+        width: 12rem;
+        text-decoration: none;
+        text-align: center;
+        background-color: black;
+        color: wheat;
+        border-radius: 2rem;
+        padding: 1.5rem;
+        border-style: inset;
+        &:hover{
+            border-style: outset;
+        }
+    }
+}
+
+@mixin boton {
+    border-style: inset;
+    &:hover{
+        max-width: 12rem;
+        border-style: outset;
+    }
+}
+
+@mixin justify{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin aling{
+    display: flex;
+    align-items: center;
+}

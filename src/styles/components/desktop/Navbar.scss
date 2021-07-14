@@ -1,0 +1,42 @@
+@media (min-width: 1024px){
+    nav{
+        @include center;
+        width: 100%;
+        height: fit-content;
+        background-color: black;
+        div{
+            @include center;            
+            width: 100%;
+            img{
+                display: none;
+            }
+            .invertido{
+                transform: rotate(180deg);
+            }
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            padding: .5rem;
+            li{
+                @include center;
+                padding: .5rem;
+                list-style: none;
+                font-size: 1.2rem;
+                a{
+                    color: #FFE268;
+                    border-bottom: white 3px solid;
+                }
+                :hover{
+                    border-bottom: #FFE268 2px solid;
+                }
+                :active{
+                    border-bottom: #FFE268 1px solid;
+                }
+            }
+        }
+        .hide{
+            display: flex;
+        }
+    }
+}

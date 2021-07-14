@@ -1,0 +1,47 @@
+@media (min-width: 480px){
+    .Home__container{
+        h1{
+            font-size: $t1h1;
+        }
+        p{
+            font-size: $t1p;
+        }
+        .Home__menu{
+            .Figuras{
+
+            }
+            .btn{
+
+            }
+            .Descuentos{
+                margin-top: 1.5rem;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px){
+    .Home__container{
+        h1{
+            font-size: $t1h1;
+        }
+        p{
+            font-size: $t2p;
+        }
+        .Home__menu{
+            .Figuras{
+                border-width: 0 90px 180px 90px;
+            }
+            .btn{
+                width: 10rem;                
+            }
+            a{
+                font-size: $t2p;
+            }
+            .Descuentos{
+                font-size: 15rem;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

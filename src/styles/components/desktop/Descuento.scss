@@ -1,0 +1,22 @@
+@media (min-width: 1024px){
+    .Descuentos__container{
+        h1{
+            font-size: $d1h1;
+        }
+        .Descuentos__card{
+            .icon{
+                font-size: 6.5rem;
+            }
+            .Descuentos__input{
+                p{
+                    font-size: $d2p;
+                }
+                .MuiFormControl-root{
+                }
+            }
+            .Resultado{
+                font-size: $d2p;
+            }
+        }
+    }
+}

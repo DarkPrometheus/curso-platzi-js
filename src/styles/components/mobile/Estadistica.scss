@@ -1,0 +1,53 @@
+@media (min-width: 320px){
+    .Estadistica__container{
+        @include center;
+        justify-content: flex-start;
+        flex-grow : 1;
+        text-align: center;
+        h1{
+            margin-top: 1rem;
+            font-size: $m1h1;
+            color: white;
+        }
+        h2{
+            font-size: $m1h2;
+            color: white;
+        }
+        .Estadistica__card{
+            background-color: white;
+            width: 90%;
+            p{
+                font-size: $m1p;
+                margin-bottom: .5rem;
+            }
+            .TextBoxArea{
+                display: flex;
+                flex-direction: column;
+                font-size: $m1p;     
+                div{
+                    div{
+                        fieldset{
+                            border: 1px solid black;
+                            border-bottom-left-radius: 0;
+                            border-bottom-right-radius: 0;
+                        }
+                    }
+                }
+                .btnClear{
+                    @include center;
+                    width: 100%;
+                    height: 2.2rem;
+                    background-color: black;
+                    color: white;
+                    border-bottom-left-radius: 1rem;
+                    border-bottom-right-radius: 1rem;
+                }
+            }
+            .Resultado{
+                margin: .5rem 0 0 0;
+                padding: 1rem;
+                border: 1px solid black;
+            }
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@media (min-width: 1024px){
+    .Estadistica__container{
+        h1{
+            font-size: $t1h1;
+        }
+        h2{
+            font-size: $t1h2;
+        }
+        .Estadistica__card{
+            width: 30%;
+            p{
+                font-size: $t1p;
+            }
+        }
+    }
+}

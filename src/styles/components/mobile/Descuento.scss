@@ -10,11 +10,6 @@
         }
         .Descuentos__card{
             @include center;
-            background-color: white;
-            padding: .5rem;
-            border-radius: 1rem;
-            border: 1px solid black;
-            margin-top: 1rem;
             .icon{
                 font-size: 5rem;
                 width: 100%;

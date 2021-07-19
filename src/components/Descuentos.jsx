@@ -16,15 +16,15 @@ export const Descuentos = () => {
     return (
         <div className={"Descuentos__container " + UseColores()}>
             <h1>Descuentos</h1>
-            <div className="Descuentos__card">
+            <div className="Descuentos__card card">
                 <p className="icon">$</p>
                 <div className="Descuentos__input">
                     <p>Precio:</p>
                     <TextField label="Precio" variant="outlined" onChange={(a) => setPrecio(a.target.value)} />
                 </div>
                 <div className="Descuentos__input">
-                    <p>Descuento:</p>
-                    <TextField label="Descuento" variant="outlined" onChange={(a) => setDescuento(a.target.value)} />
+                    <p>Descuento %:</p>
+                    <TextField label="Descuento %" variant="outlined" onChange={(a) => setDescuento(a.target.value)} />
                 </div>
                 <p className="Resultado">
                     {

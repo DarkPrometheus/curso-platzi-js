@@ -95,6 +95,14 @@ a{
     }
 }
 
+.card{
+    background-color: white;
+    padding: .5rem;
+    border-radius: 1rem;
+    border: 1px solid black;
+    margin-top: 1rem;
+}
+
 .Color1{
     background: rgb(25,27,29);
     background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #87D1AB 52%);
@@ -110,4 +118,20 @@ a{
 .Color4{
     background: rgb(25,27,29);
     background: linear-gradient(145deg, rgba(25,27,29,1) 48%, #E4C1F9 52%);
+}
+.Color1I{
+    background: rgb(25,27,29);
+    background: linear-gradient(215deg, rgba(25,27,29,1) 48%, #87D1AB 52%);
+}
+.Color2I{
+    background: rgb(25,27,29);
+    background: linear-gradient(215deg, rgba(25,27,29,1) 48%, #FFADAD 52%);
+}
+.Color3I{
+    background: rgb(25,27,29);
+    background: linear-gradient(215deg, rgba(25,27,29,1) 48%, #A4CEFC 52%);
+}
+.Color4I{
+    background: rgb(25,27,29);
+    background: linear-gradient(215deg, rgba(25,27,29,1) 48%, #E4C1F9 52%);
 }

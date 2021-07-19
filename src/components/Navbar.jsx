@@ -33,7 +33,7 @@ export const Navbar = () => {
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/Figuras">Taller #1</Link></li>
                 <li><Link to="/Descuentos">Taller #2</Link></li>
-                <li><Link>Taller #3</Link></li>
+                <li><Link to="/Estadistica">Taller #3</Link></li>
                 <li><Link>Taller #4</Link></li>
                 <li><a
                     href="https://github.com/DarkPrometheus"

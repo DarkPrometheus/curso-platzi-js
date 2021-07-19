@@ -7,9 +7,11 @@
 @import "./components/mobile/Home.scss";
 @import "./components/mobile/Figuras.scss";
 @import "./components/mobile/Descuento.scss";
+@import "./components/mobile/Estadistica.scss";
 
 // Tablet
 @import "./components/tablet/Descuento.scss";
+@import "./components/tablet/Estadistica.scss";
 @import "./components/tablet/Figuras.scss";
 @import "./components/tablet/Home.scss";
 
@@ -17,3 +19,4 @@
 @import "./components/desktop/Navbar.scss";
 @import "./components/desktop/Figuras.scss";
 @import "./components/desktop/Home.scss";
+@import "./components/desktop/Estadistica.scss";

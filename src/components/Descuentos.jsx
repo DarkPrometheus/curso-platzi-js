@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import TextField from '@material-ui/core/TextField';
 import { UseColores } from './../hooks/UseColores';
 import { UseOnlyNumbers } from './../hooks/UseOnlyNumbers';
+import { useIncludesDots } from '../hooks/useIncludesDots';
 
 export const Descuentos = () => {
     const [Precio, setPrecio] = useState(0)
@@ -20,26 +21,28 @@ export const Descuentos = () => {
         var value = e.split('')
         var Allowed = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", undefined]
 
-        if (UseOnlyNumbers(value[value.length - 1], Allowed) !== "") {
-            if (Caja === "Caja1") {
-                if (e !== "") {
-                    setPrecio(e)
+        if (!(useIncludesDots(e) > 1)) {
+            if (UseOnlyNumbers(value[value.length - 1], Allowed) !== "") {
+                if (Caja === "Caja1") {
+                    if (e !== "") {
+                        setPrecio(e)
+                    }
+                    else {
+                        setPrecio(0)
+                        setResultado("")
+                    }
+                    setValue1(e)
                 }
                 else {
-                    setPrecio(0)
-                    setResultado("")
+                    if (e !== "") {
+                        setDescuento(e)
+                    }
+                    else {
+                        setDescuento(0)
+                        setResultado("")
+                    }
+                    setValue2(e)
                 }
-                setValue1(e)
-            }
-            else {
-                if (e !== "") {
-                    setDescuento(e)
-                }
-                else {
-                    setDescuento(0)
-                    setResultado("")
-                }
-                setValue2(e)
             }
         }
     }

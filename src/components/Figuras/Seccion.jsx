@@ -1,35 +1,46 @@
 import React, { useEffect, useState } from 'react'
 import TextField from '@material-ui/core/TextField';
+import { UseOnlyNumbers } from '../../hooks/UseOnlyNumbers';
+import { useIncludesDots } from './../../hooks/useIncludesDots';
 
 export const Seccion = (props) => {
     const [Perimetro, setPerimetro] = useState(0)
     const [Area, setArea] = useState(0)
     const [PoligonoLados, setPoligonoLados] = useState(6)
     const [Apotema, setApotema] = useState()
+    const [Value, setValue] = useState("")
 
     const Calcular = (l, TipoValor) => {
-        switch (props.alt) {
-            case "cuadrado":
-                setPerimetro(l * 4)
-                setArea(l * l)
-                break;
-            case "triangulo":
-                setPerimetro(l * 3)
-                setArea((l * l) / 2)
-                break;
-            case "poligono":
-                if (TipoValor === "Lado") {
-                    setPoligonoLados(l)
+        var value = l.split('')
+        var Allowed = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ".", undefined]
+
+        if (!(useIncludesDots(l) > 1)) {
+            if (UseOnlyNumbers(value[value.length - 1], Allowed) !== "") {
+                setValue(l)
+                switch (props.alt) {
+                    case "cuadrado":
+                        setPerimetro(l * 4)
+                        setArea(l * l)
+                        break;
+                    case "triangulo":
+                        setPerimetro(l * 3)
+                        setArea((l * l) / 2)
+                        break;
+                    case "poligono":
+                        if (TipoValor === "Lado") {
+                            setPoligonoLados(l)
+                        }
+                        else if (TipoValor === "Apo") {
+                            setApotema(l)
+                        }
+                        break;
+                    case "circulo":
+                        setArea(Math.pow((l), 2) * 3.1416)
+                        break;
+                    default:
+                        break;
                 }
-                else if (TipoValor === "Apo") {
-                    setApotema(l)
-                }
-                break;
-            case "circulo":
-                setArea(Math.pow((l), 2) * 3.1416)
-                break;
-            default:
-                break;
+            }
         }
     }
 
@@ -61,7 +72,12 @@ export const Seccion = (props) => {
                     <h3>{props.title}</h3>
                 </div>
                 <p>{props.desc}</p>
-                <TextField label={props.lablel} variant="outlined" onChange={(a) => Calcular(a.target.value, "Apo")} />
+                <TextField
+                    value={Value}
+                    label={props.lablel}
+                    variant="outlined"
+                    onChange={(a) => Calcular(a.target.value, "Apo")}
+                />
                 {
                     (props.alt === "poligono")
                         ?

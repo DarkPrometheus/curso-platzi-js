@@ -11,13 +11,14 @@ export const Estadistica = () => {
 
     const Main = (a) => {
         var value = a.split('')
-        if (UseOnlyNumbers(value[value.length - 1]) !== "") {
+        var Allowed = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", ",", ".", " ", undefined]
+        if (UseOnlyNumbers(value[value.length - 1], Allowed) !== "") {
             if (a !== "") {
                 setValues(a)
                 var numeros = []
                 var preNumeros = a.split(',')
                 for (let i = 0; i < preNumeros.length; i++) {
-                    numeros.push(ToNumber(preNumeros[i]))
+                    numeros.push(parseInt(preNumeros[i]))
                 }
 
                 if (isNaN(numeros[numeros.length - 1])) {
@@ -32,10 +33,6 @@ export const Estadistica = () => {
                 Limpiar()
             }
         }
-    }
-
-    const ToNumber = (x) => {
-        return parseInt(x)
     }
 
     const GetPromedio = (x) => {

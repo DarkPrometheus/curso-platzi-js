@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/DarkPrometheus/curso-platzi-js/static/css/main.9de3002b.chunk.css",
-    "main.js": "/DarkPrometheus/curso-platzi-js/static/js/main.2c96d3ca.chunk.js",
-    "main.js.map": "/DarkPrometheus/curso-platzi-js/static/js/main.2c96d3ca.chunk.js.map",
-    "runtime-main.js": "/DarkPrometheus/curso-platzi-js/static/js/runtime-main.d79ee87b.js",
-    "runtime-main.js.map": "/DarkPrometheus/curso-platzi-js/static/js/runtime-main.d79ee87b.js.map",
-    "static/js/2.7a34d09f.chunk.js": "/DarkPrometheus/curso-platzi-js/static/js/2.7a34d09f.chunk.js",
-    "static/js/2.7a34d09f.chunk.js.map": "/DarkPrometheus/curso-platzi-js/static/js/2.7a34d09f.chunk.js.map",
-    "index.html": "/DarkPrometheus/curso-platzi-js/index.html",
-    "static/css/main.9de3002b.chunk.css.map": "/DarkPrometheus/curso-platzi-js/static/css/main.9de3002b.chunk.css.map",
-    "static/js/2.7a34d09f.chunk.js.LICENSE.txt": "/DarkPrometheus/curso-platzi-js/static/js/2.7a34d09f.chunk.js.LICENSE.txt",
-    "static/media/1.d44a0a29.png": "/DarkPrometheus/curso-platzi-js/static/media/1.d44a0a29.png",
-    "static/media/3.a79cbe14.png": "/DarkPrometheus/curso-platzi-js/static/media/3.a79cbe14.png",
-    "static/media/js-challenge-logo.444f76e0.png": "/DarkPrometheus/curso-platzi-js/static/media/js-challenge-logo.444f76e0.png",
-    "static/media/platzi.4f4d1b56.webp": "/DarkPrometheus/curso-platzi-js/static/media/platzi.4f4d1b56.webp"
+    "main.css": "/curso-platzi-js/static/css/main.9de3002b.chunk.css",
+    "main.js": "/curso-platzi-js/static/js/main.2c96d3ca.chunk.js",
+    "main.js.map": "/curso-platzi-js/static/js/main.2c96d3ca.chunk.js.map",
+    "runtime-main.js": "/curso-platzi-js/static/js/runtime-main.36e78cae.js",
+    "runtime-main.js.map": "/curso-platzi-js/static/js/runtime-main.36e78cae.js.map",
+    "static/js/2.7a34d09f.chunk.js": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js",
+    "static/js/2.7a34d09f.chunk.js.map": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js.map",
+    "index.html": "/curso-platzi-js/index.html",
+    "static/css/main.9de3002b.chunk.css.map": "/curso-platzi-js/static/css/main.9de3002b.chunk.css.map",
+    "static/js/2.7a34d09f.chunk.js.LICENSE.txt": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js.LICENSE.txt",
+    "static/media/1.d44a0a29.png": "/curso-platzi-js/static/media/1.d44a0a29.png",
+    "static/media/3.a79cbe14.png": "/curso-platzi-js/static/media/3.a79cbe14.png",
+    "static/media/js-challenge-logo.444f76e0.png": "/curso-platzi-js/static/media/js-challenge-logo.444f76e0.png",
+    "static/media/platzi.4f4d1b56.webp": "/curso-platzi-js/static/media/platzi.4f4d1b56.webp"
   },
   "entrypoints": [
-    "static/js/runtime-main.d79ee87b.js",
+    "static/js/runtime-main.36e78cae.js",
     "static/js/2.7a34d09f.chunk.js",
     "static/css/main.9de3002b.chunk.css",
     "static/js/main.2c96d3ca.chunk.js"

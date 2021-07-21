@@ -11,7 +11,7 @@ export const Home = () => {
                 <h1>Curso de platzi</h1>
                 <h2>Curso práctico de JavaScript</h2>
                 <p>Página web de matemáticas con JavaScript</p>
-                <h3>Echo con</h3>
+                <h3>Hecho con</h3>
                 <ul>
                     <li>React</li>
                     <li>SASS</li>

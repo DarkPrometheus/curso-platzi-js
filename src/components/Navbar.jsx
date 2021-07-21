@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
+import platzi from "./img/platzi.webp";
+import js from "./img/js-challenge-logo.png";
 
 export const Navbar = () => {
     const [HideClass, setHideClass] = useState("hide")
@@ -23,6 +25,15 @@ export const Navbar = () => {
 
     return (
         <nav>
+            <div className="Logo__container">
+                <a
+                    href="https://platzi.com/p/emmanuelf/"
+                    target='_blank'
+                    rel="noreferrer"
+                >
+                    <img src={platzi} alt="platzi-logo" className="logo platzi" />
+                </a>
+            </div>
             <div
                 onClick={ChangeHide}
             >
@@ -58,7 +69,14 @@ export const Navbar = () => {
                 >
                     Github
                 </a></li>
+                <li className="Logos">
+                    <img src={platzi} alt="platzi-logo" />
+                    <img src={js} alt="js" />
+                </li>
             </ul>
+            <div className="Logo__container">
+                <img src={js} alt="js" className="logo js" />
+            </div>
         </nav>
     )
 }

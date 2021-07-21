@@ -4,6 +4,9 @@
         width: 100%;
         height: fit-content;
         background-color: black;
+        .logo{
+            display: none;
+        }
         div{
             @include center;            
             width: 100%;
@@ -18,6 +21,7 @@
             display: flex;
             flex-direction: column;
             padding: .5rem;
+            width: 100%;
             li{
                 @include center;
                 padding: .5rem;
@@ -26,6 +30,19 @@
                 a{
                     color: #FFE268;
                     border-bottom: white 3px solid;
+                }
+            }
+            .Logos{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                img{
+                    width: 6rem;
+                    height: 2.5rem;                        
+                    &:last-child{
+                        width: 4rem;
+                        height: 4rem;                        
+                    }
                 }
             }
         }

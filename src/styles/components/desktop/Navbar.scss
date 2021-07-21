@@ -6,17 +6,30 @@
         position: sticky;
         top: 0;
         background-color: black;
+        flex-direction: row;
+        .logo{
+            display: block
+        }
+        .Logo__container{
+            flex: 1;
+            .platzi{
+                width: 9rem;
+                height: 3rem;
+            }
+            .js{
+                height: 4rem;
+            }
+        }
         div{
-            @include center;            
-            width: 100%;
+            width: 0;
             img{
                 display: none;
             }
-            .invertido{
-                transform: rotate(180deg);
-            }
         }
         ul{
+            @include center;
+            flex: 2;
+            width: fit-content;
             display: flex;
             flex-direction: row;
             padding: .5rem;
@@ -28,13 +41,16 @@
                 a{
                     color: #FFE268;
                     border-bottom: white 3px solid;
+                    &:hover{
+                        border-bottom: #FFE268 2px solid;
+                    }
+                    &:active{
+                        border-bottom: #FFE268 1px solid;
+                    }
                 }
-                :hover{
-                    border-bottom: #FFE268 2px solid;
-                }
-                :active{
-                    border-bottom: #FFE268 1px solid;
-                }
+            }
+            .Logos{
+                display: none;
             }
         }
         .hide{

@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/curso-platzi-js/static/css/main.9de3002b.chunk.css",
-    "main.js": "/curso-platzi-js/static/js/main.2c96d3ca.chunk.js",
-    "main.js.map": "/curso-platzi-js/static/js/main.2c96d3ca.chunk.js.map",
+    "main.js": "/curso-platzi-js/static/js/main.f0c9f421.chunk.js",
+    "main.js.map": "/curso-platzi-js/static/js/main.f0c9f421.chunk.js.map",
     "runtime-main.js": "/curso-platzi-js/static/js/runtime-main.36e78cae.js",
     "runtime-main.js.map": "/curso-platzi-js/static/js/runtime-main.36e78cae.js.map",
-    "static/js/2.7a34d09f.chunk.js": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js",
-    "static/js/2.7a34d09f.chunk.js.map": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js.map",
+    "static/js/2.ff1a6ee7.chunk.js": "/curso-platzi-js/static/js/2.ff1a6ee7.chunk.js",
+    "static/js/2.ff1a6ee7.chunk.js.map": "/curso-platzi-js/static/js/2.ff1a6ee7.chunk.js.map",
     "index.html": "/curso-platzi-js/index.html",
     "static/css/main.9de3002b.chunk.css.map": "/curso-platzi-js/static/css/main.9de3002b.chunk.css.map",
-    "static/js/2.7a34d09f.chunk.js.LICENSE.txt": "/curso-platzi-js/static/js/2.7a34d09f.chunk.js.LICENSE.txt",
+    "static/js/2.ff1a6ee7.chunk.js.LICENSE.txt": "/curso-platzi-js/static/js/2.ff1a6ee7.chunk.js.LICENSE.txt",
     "static/media/1.d44a0a29.png": "/curso-platzi-js/static/media/1.d44a0a29.png",
     "static/media/3.a79cbe14.png": "/curso-platzi-js/static/media/3.a79cbe14.png",
     "static/media/js-challenge-logo.444f76e0.png": "/curso-platzi-js/static/media/js-challenge-logo.444f76e0.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.36e78cae.js",
-    "static/js/2.7a34d09f.chunk.js",
+    "static/js/2.ff1a6ee7.chunk.js",
     "static/css/main.9de3002b.chunk.css",
-    "static/js/main.2c96d3ca.chunk.js"
+    "static/js/main.f0c9f421.chunk.js"
   ]
 }

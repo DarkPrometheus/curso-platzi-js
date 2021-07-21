@@ -15,11 +15,8 @@ body{
 }
 #root, .Routers{
     height: 100%;
-    background: rgb(25,27,29);
-    background: linear-gradient(145deg, rgba(25,27,29,1) 48%, rgba(255,226,104,1) 52%);
     display: flex;
     flex-flow: column;
-    
 }
 .Routers{
 display: flex;

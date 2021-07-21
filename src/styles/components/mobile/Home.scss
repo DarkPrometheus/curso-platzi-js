@@ -2,40 +2,74 @@
     .Home__container{
         @include center;
         justify-content: flex-start;
-        color: white;
         height: 100%;
-        h1{
-            font-size: $m1h1;
-        }
-        p{
-            width: 80%;
-            text-align: center;
-            font-size: $m1p;
+        text-align: center;
+        background-color: antiquewhite;
+        .Home__mainContainer{
+            flex: 2;
+            h1{
+                font-size: $m1h1;
+                color: #97C93E;
+            }
+            h2{
+                font-size: $m1h2;
+            }
+            h3{
+                font-size: $m1h2;
+            }
+            p{
+                margin: 1rem 0;
+                text-align: center;
+                font-size: $m1p;
+            }
+            ul{
+                @include center;
+                li{
+                    list-style: circle;
+                    font-size: 1.2rem
+                }
+            }
         }
         .Home__menuContainer{
+            width: 100%;
+            flex: 1;
             .Home__menu{
                 @include center;
+                background-color: black;
                 justify-content: flex-start;
                 width: 100%;
-                height: 20rem;
-                margin-bottom: 2rem;
-                .Icon{
-                    @include center;
-                    width: 50%;
-                    height: 100%;
-                    flex: 8;
+                padding: .5rem 0;
+                :last-child{
+                    margin-bottom: 0;
                 }
-                .btn{
-                    height: 5rem;
-                    width: 12rem;
-                    flex: 1;
-                    margin-top: 1rem;
-                    background-color: black;
-                    color: white;
-                    padding: .5rem;
-                    text-align: center;
-                    border-radius: 2rem;
-                    box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.61);
+                a{
+                    display: flex;
+                    flex-direction: row;
+                    margin-bottom: .5rem;
+                    width: 100%;
+                    background-color: #F6DF1C;
+                    color: black;
+                    .Img{
+                        @include center;
+                        flex: 30;
+                        img{
+                            width: 3.5rem;
+                            height: 3.5rem;
+                        }
+                    }
+                    .Textos{
+                        text-align: left;
+                        flex: 70;
+                        h3{
+                            font-size: 1.3rem;
+                        }
+                        h2{
+                            font-size: 1.2rem;
+                        }
+                        p{
+                            font-size: 1rem;
+                        }
+                    }
                 }
             }
         }

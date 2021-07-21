@@ -10,6 +10,7 @@
         }
         .Descuentos__card{
             @include center;
+            background-color: $CardColor;
             .icon{
                 font-size: 5rem;
                 width: 100%;

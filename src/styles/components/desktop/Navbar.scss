@@ -3,6 +3,8 @@
         @include center;
         width: 100%;
         height: fit-content;
+        position: sticky;
+        top: 0;
         background-color: black;
         div{
             @include center;            

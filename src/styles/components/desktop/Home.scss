@@ -2,58 +2,122 @@
 
 @media (min-width: 1024px){
     .Home__container{
-        h1{
-            font-size: $d1h1;
-        }
-        p{
-            font-size: $d1p;
+        flex-direction: row;
+        .Home__mainContainer{
+            height: 80%;
+            align-items: flex-start;
+            h1{
+                font-size: $d1h1;
+            }
+            h2{
+                font-size: $d1h2;
+            }
+            h3{
+                font-size: $d1h2;
+            }
+            p{
+                font-size: $d1p;
+            }
+            ul{
+                li{
+                    font-size: 1.4rem
+                }
+            }
         }
         .Home__menuContainer{
-            margin-top: 2rem;
-            width: 50%;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            height: 100%;
             .Home__menu{
-                .Figuras{
-                    border-width: 0 145px 270px 145px;
-                }
-                .btn{
-                    
-                }
+                display: flex;
+                height: 100%;
+                padding: .5rem 0 0 .5rem;
                 a{
-                    font-size: $d1p;
+                    @include center; 
+                    flex-direction: row;
+                    flex: 1;
+                    transition: all 0.3s ease;
+                    .Img{
+                        img{
+                            width: 4rem;
+                            height: 4rem;
+                        }
+                    }
+                    .Textos{
+                        h3{
+                            font-size: 1.5rem;
+                        }
+                        h2{
+                            font-size: 1.4rem;
+                        }
+                        p{
+                            font-size: 1.2rem;
+                        }
+                    }
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        .Img{
+                            img{
+                                filter: invert(1);
+                            }
+                        }
+                    }
                 }
-                .Descuentos{
-                    font-size: 20rem;
-                    color: black;
-                    margin-top: -2rem;
-                    margin-bottom: -2.9rem;
-                }
-            }    
+            }
         }
     }
 }
 @media (min-width: 1800px){
     .Home__container{
-        h1{
-            font-size: $t1h1;
-        }
-        p{
-            font-size: $d2p;
+        .Home__mainContainer{
+            h1{
+                font-size: 4rem;
+            }
+            h2{
+                font-size: $d2h2;
+            }
+            h3{
+                font-size: $d2h2;
+            }
+            p{
+                font-size: $d2p;
+            }
+            ul{
+                li{
+                    font-size: 1.4rem
+                }
+            }
         }
         .Home__menuContainer{
             .Home__menu{
-                .Figuras{
-                    border-width: 0 145px 270px 145px;
-                }
-                .btn{
-                    
-                }
                 a{
-                    font-size: $d2p;
+                    .Img{
+                        img{
+                            width: 6rem;
+                            height: 6rem;
+                        }
+                    }
+                    .Textos{
+                        h3{
+                            font-size: 1.7rem;
+                        }
+                        h2{
+                            font-size: 1.5rem;
+                        }
+                        p{
+                            font-size: 1.35rem;
+                        }
+                    }
+                    &:hover{
+                        background-color: black;
+                        color: white;
+                        .Img{
+                            img{
+                                filter: invert(1);
+                            }
+                        }
+                    }
                 }
             }
-    
         }
     }
 }

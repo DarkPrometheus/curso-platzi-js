@@ -16,6 +16,11 @@ export const Navbar = () => {
         }
     }
 
+    const Close = () => {
+        setHideClass("hide")
+        setArrow("normal")
+    }
+
     return (
         <nav>
             <div
@@ -30,11 +35,22 @@ export const Navbar = () => {
             <ul
                 className={HideClass}
             >
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/Figuras">Taller #1</Link></li>
-                <li><Link to="/Descuentos">Taller #2</Link></li>
-                <li><Link to="/Estadistica">Taller #3</Link></li>
-                <li><Link>Taller #4</Link></li>
+                <li><Link
+                    to="/"
+                    onClick={Close}
+                >Home</Link></li>
+                <li><Link
+                    to="/Figuras"
+                    onClick={Close}
+                >Taller #1</Link></li>
+                <li><Link
+                    to="/Descuentos"
+                    onClick={Close}
+                >Taller #2</Link></li>
+                <li><Link
+                    to="/Estadistica"
+                    onClick={Close}
+                >Taller #3</Link></li>
                 <li><a
                     href="https://github.com/DarkPrometheus"
                     target='_blank'

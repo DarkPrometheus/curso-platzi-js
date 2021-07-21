@@ -1,49 +1,55 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import taller1 from "./img/1.png"
+import taller2 from "./img/2.png"
+import taller3 from "./img/3.png"
 
 export const Home = () => {
     return (
         <div className="Home__container">
-            <h1>Curso de platzi</h1>
-            <p>Este es el primer taller del curso practico de JavaScript</p>
+            <div className="Home__mainContainer" >
+                <h1>Curso de platzi</h1>
+                <h2>Curso práctico de JavaScript</h2>
+                <p>Página web de matemáticas con JavaScript</p>
+                <h3>Echo con</h3>
+                <ul>
+                    <li>React</li>
+                    <li>SASS</li>
+                </ul>
+            </div>
             <div className="Home__menuContainer">
                 <div className="Home__menu">
-                    <Link to="/Figuras" className="Icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M3 20h18L12 4z" />
-                        </svg>
+                    <Link to="/Figuras">
+                        <div className="Img">
+                            <img src={taller1} alt="Dinero" />
+                        </div>
+                        <div className="Textos" >
+                            <h3>Taller #1</h3>
+                            <h2>Figuras geometricas</h2>
+                            <p>Calcula el area y el perimetro de figuras</p>
+                        </div>
                     </Link>
-                    <Link to="/Figuras" className="btn">Figuras</Link>
-                </div>
-                <div className="Home__menu">
-                    <Link to="/Descuentos" className="Icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="12" y1="1" x2="12" y2="23"></line>
-                            <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
-                        </svg>
+                    <Link to="/Descuentos">
+                        <div className="Img">
+                            <img src={taller2} alt="Dinero" />
+                        </div>
+                        <div className="Textos" >
+                            <h3>Taller #2</h3>
+                            <h2>Descuentos</h2>
+                            <p>Porcentajes y descuentos en precios</p>
+                        </div>
                     </Link>
-                    <Link to="/Descuentos" className="btn">Descuentos</Link>
-                </div>
-                <div className="Home__menu">
-                    <Link to="/Estadistica" className="Icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M18.6 18.6L12 12V2.5" />
-                            <circle cx="12" cy="12" r="10" />
-                        </svg>
+                    <Link to="/Estadistica">
+                        <div className="Img">
+                            <img src={taller3} alt="Dinero" />
+                        </div>
+                        <div className="Textos" >
+                            <h3>Taller #3</h3>
+                            <h2>Promedio, moda y mediana</h2>
+                            <p>Calcula el promedio, moda y meidana de una lista</p>
+                        </div>
                     </Link>
-                    <Link to="/Descuentos" className="btn">Descuentos</Link>
                 </div>
-                <div className="Home__menu">
-                    <Link to="/Descuentos" className="Icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <line x1="18" y1="20" x2="18" y2="10"></line>
-                            <line x1="12" y1="20" x2="12" y2="4"></line>
-                            <line x1="6" y1="20" x2="6" y2="14"></line>
-                        </svg>
-                    </Link>
-                    <Link to="/Descuentos" className="btn">Descuentos</Link>
-                </div>
-
             </div>
         </div>
     )

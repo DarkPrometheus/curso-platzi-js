@@ -1,4 +1,4 @@
-$ResColor: white;
+$ResColor: $CardColor;
 $ResSecColor: black;
 
 @media (min-width: 320px){
@@ -20,6 +20,7 @@ $ResSecColor: black;
         .Figuras__seccionContainer{
             color: black;
             width: 90%;
+            
             .Figuras__seccion{
                 background-color: $ResColor;
                 width: 100%;

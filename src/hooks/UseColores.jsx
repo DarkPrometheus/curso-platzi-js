@@ -1,5 +1,5 @@
 export const UseColores = () => {
-    switch (Math.floor(Math.random() * 8) + 1) {
+    switch (Math.floor(Math.random() * 4) + 1) {
         case 1:
             return "Color1"
         case 2:

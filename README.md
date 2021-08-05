@@ -4,7 +4,13 @@ Curso para reforzar habilidades basicas de JavaScript
 
 [Pagina en Github pages](https://emmanuelfrias.com/curso-platzi-js/#/)
 
-![img](./portada.png)
+Vista de pc:
+
+![img](./img-pc.png)
+
+Vista de telefono:
+
+![img](./img-mobile.png)
 
 ### Taller #1 - Figuras geometricas
 

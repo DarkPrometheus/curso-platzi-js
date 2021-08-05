@@ -15,6 +15,7 @@ export const Home = () => {
                 <ul>
                     <li>React</li>
                     <li>SASS</li>
+                    <li>JavaScript</li>
                 </ul>
             </div>
             <div className="Home__menuContainer">

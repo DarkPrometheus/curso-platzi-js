@@ -8,14 +8,14 @@ export const UseColores = () => {
             return "Color3"
         case 4:
             return "Color4"
-        case 5:
-            return "Color1I"
-        case 6:
-            return "Color2I"
-        case 7:
-            return "Color3I"
-        case 8:
-            return "Color4I"
+        // case 5:
+        //     return "Color1I"
+        // case 6:
+        //     return "Color2I"
+        // case 7:
+        //     return "Color3I"
+        // case 8:
+        //     return "Color4I"
 
         default:
             break;
